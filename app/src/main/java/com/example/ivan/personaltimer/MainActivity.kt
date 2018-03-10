@@ -17,13 +17,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        Log.d("Test","onClick")
         //1000*60*60 - hour
         val intent = Intent(applicationContext, AlarmActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(applicationContext,0,intent,0)
 
         val am:AlarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        am.set(AlarmManager.RTC, AlarmManager.INTERVAL_HOUR, pendingIntent)
-
+        am.set(AlarmManager.RTC,AlarmManager.INTERVAL_HOUR , pendingIntent)//
+        finish()
     }
 }
