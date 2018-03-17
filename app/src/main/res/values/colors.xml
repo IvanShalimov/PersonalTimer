@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="startGradient">#191970</color>
+    <color name="stopGradient">#FFFFFF</color>
+    <color name="textAndButtonColor">#B22222</color>
 </resources>

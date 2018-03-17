@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PersonalTimer</string>
+    <string name="start_timer">Через час вы будете уведомлены!</string>
+    <string name="repeat">Еще раз?</string>
 </resources>
