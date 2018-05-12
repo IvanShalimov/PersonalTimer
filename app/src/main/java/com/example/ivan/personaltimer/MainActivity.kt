@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val pendingIntent = PendingIntent.getActivity(applicationContext,0,intent,0)
 
         val am:AlarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        am.set(AlarmManager.RTC,AlarmManager.INTERVAL_HOUR , pendingIntent)//
+        am.set(AlarmManager.RTC,10000 , pendingIntent)//AlarmManager.INTERVAL_HOUR
         finish()
     }
 }
