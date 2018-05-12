@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PersonalTimer</string>
+    <string name="repeat_label"><u>Повторить?</u></string>
 </resources>
