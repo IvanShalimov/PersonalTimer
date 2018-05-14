@@ -2,4 +2,5 @@
     <string name="app_name">PersonalTimer</string>
     <string name="repeat_label"><u>Повторить?</u></string>
     <string name="close_label">Закрыть</string>
+    <string name="go">GO!</string>
 </resources>
