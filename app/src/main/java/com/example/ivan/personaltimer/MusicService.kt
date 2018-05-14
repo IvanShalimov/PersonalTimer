@@ -2,11 +2,6 @@ package com.example.ivan.personaltimer
 
 import android.app.Service
 import android.content.Intent
-<<<<<<< HEAD
-import android.os.IBinder
-
-class MusicService : Service() {
-=======
 import android.media.MediaPlayer
 import android.os.IBinder
 
@@ -32,13 +27,10 @@ class MusicService : Service(), MediaPlayer.OnCompletionListener {
 
         return super.onStartCommand(intent, flags, startId)
     }
->>>>>>> b9d532627307a3c3ab952063a005be99bbc97d48
-
     override fun onBind(intent: Intent): IBinder {
         TODO("Return the communication channel to the service.")
     }
-<<<<<<< HEAD
-=======
+
 
     override fun onDestroy() {
         super.onDestroy()
@@ -49,5 +41,4 @@ class MusicService : Service(), MediaPlayer.OnCompletionListener {
         mediaPlayer.stop()
         mediaPlayer.release()
     }
->>>>>>> b9d532627307a3c3ab952063a005be99bbc97d48
 }
