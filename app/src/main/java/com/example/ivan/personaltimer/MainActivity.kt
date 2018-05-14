@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun onClick(v: View?) {
+    fun onClick(v: View) {
         (getSystemService(Context.ALARM_SERVICE) as AlarmManager).
                 set(AlarmManager.RTC,
                         AlarmManager.INTERVAL_HOUR,
