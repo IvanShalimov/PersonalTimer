@@ -69,14 +69,15 @@ class AlarmActivity : AppCompatActivity(){
                 } else {
                     (getSystemService(Context.ALARM_SERVICE) as AlarmManager)
                             .set(AlarmManager.RTC,
-                                    AlarmManager.INTERVAL_HOUR,
+                                    System.currentTimeMillis()+AlarmManager.INTERVAL_HOUR,
                                     createPendingIntent(applicationContext))
+
                 }
             }
             R.id.replyLabel -> {
                 (getSystemService(Context.ALARM_SERVICE) as AlarmManager)
                         .set(AlarmManager.RTC,
-                                AlarmManager.INTERVAL_HOUR,
+                                System.currentTimeMillis()+AlarmManager.INTERVAL_HOUR,
                                 createPendingIntent(applicationContext))
             }
         }
